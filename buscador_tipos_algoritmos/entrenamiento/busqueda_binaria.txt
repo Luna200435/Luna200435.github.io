@@ -1,0 +1,35 @@
+Binary search
+Búsqueda binaria
+Búsqueda dicotómica
+Búsqueda por bisección
+Búsqueda ternaria
+Búsqueda logarítmica
+Búsqueda en arreglo ordenado por mitades
+Divide la lista ordenada a la mitad y descarta la mitad donde no puede estar el dato
+Compara el valor buscado con el elemento central
+Requiere que el arreglo esté ordenado
+Si el valor es menor que el del centro sigue buscando en la mitad izquierda
+Su complejidad es O(log n)
+En cada paso reduce a la mitad el espacio de búsqueda
+Es como adivinar un número del 1 al 100 diciendo solo mayor o menor
+Abrir un diccionario por la mitad y decidir si la palabra queda antes o después
+Usa tres índices: inicio, fin y medio
+medio = (inicio + fin) // 2
+Encuentra un dato entre un millón de elementos ordenados en unos 20 pasos
+Divide y vencerás aplicado a una lista ordenada
+Divide el arreglo en tres partes usando dos puntos medios
+Calcula el punto medio y descarta una mitad con cada comparación
+Busca un nombre en una guía telefónica abriendo por el centro
+Si el elemento del centro es mayor que el buscado, mueve el límite derecho
+Si el elemento central es menor que el buscado, mueve el límite izquierdo
+Solo funciona en estructuras ordenadas con acceso directo por índice
+Con 1000 elementos ordenados necesita como máximo 10 comparaciones
+Repite el corte por la mitad hasta quedarse con un solo elemento
+Es lo que hace el módulo bisect de Python
+Versión recursiva que busca en el subarreglo izquierdo o en el derecho
+Encontrar una página de un libro abriéndolo en medio y avanzando o retrocediendo
+Descarta la mitad de los datos con cada comparación
+Es mucho más rápida que la lineal, pero antes hay que ordenar los datos
+Juego de adivinar el número: ¿es mayor que 50? entonces ¿es mayor que 75?
+while inicio <= fin: medio = (inicio + fin) // 2; if a[medio] == x: return medio
+Partir la lista en dos, quedarse con una parte y repetir el proceso

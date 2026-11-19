@@ -1,0 +1,1 @@
+# No se necesitan librerias externas: solo Python 3.8 o superior.

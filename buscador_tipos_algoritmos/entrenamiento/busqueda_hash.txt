@@ -1,0 +1,34 @@
+Hash search
+Búsqueda por hash
+Búsqueda con tabla hash
+Búsqueda por dispersión
+Tabla de dispersión
+Hash table lookup
+Búsqueda por llave en un diccionario
+Calcula una función hash de la clave para saber directamente en qué casilla está el dato
+Accede al elemento en tiempo constante O(1) en promedio
+Usa una tabla hash para guardar y encontrar valores por su clave
+Convierte la clave en un índice con una función de dispersión
+Cuando dos claves caen en la misma posición ocurre una colisión
+Resuelve las colisiones con encadenamiento o con direccionamiento abierto
+Es como un casillero de gimnasio cuyo número se calcula a partir de tu nombre
+No necesita comparar contra todos los elementos
+indice = hash(clave) % tamaño_tabla
+Los diccionarios de Python funcionan con este principio
+Un mapa clave-valor como el HashMap de Java
+Sirve para encontrar al instante a un alumno por su matrícula
+Si la función hash es mala se amontonan datos en pocas casillas y se vuelve lenta
+Se vigila el factor de carga de la tabla para no llenarla
+Cuando la casilla está ocupada usa sondeo lineal para probar la siguiente
+Un bibliotecario calcula con una fórmula el estante exacto de cada libro a partir de su código
+No importa el orden en que se guardan los datos porque la posición la decide la fórmula
+Un conjunto (set) comprueba si un elemento existe casi al instante
+Asigna cada clave a un cubo mediante una función matemática
+Si la tabla se llena hay que hacer rehashing con un tamaño mayor
+Tiempo constante en promedio, pero O(n) en el peor caso si todo choca
+La clave se transforma en un número que indica la posición donde se guardó
+Cada cubo guarda una lista con las claves que chocaron
+tabla[hash(nombre) % 10]
+Busca por la clave transformada en lugar de comparar valores uno a uno
+Se aplica una función al dato y el resultado es la dirección donde buscarlo
+Para saber si un correo ya está registrado se calcula su hash y se mira esa posición

@@ -1,0 +1,174 @@
+texto,etiqueta
+Binary search,busqueda_binaria
+Búsqueda binaria,busqueda_binaria
+Búsqueda dicotómica,busqueda_binaria
+Búsqueda por bisección,busqueda_binaria
+Búsqueda ternaria,busqueda_binaria
+Búsqueda logarítmica,busqueda_binaria
+Búsqueda en arreglo ordenado por mitades,busqueda_binaria
+Divide la lista ordenada a la mitad y descarta la mitad donde no puede estar el dato,busqueda_binaria
+Compara el valor buscado con el elemento central,busqueda_binaria
+Requiere que el arreglo esté ordenado,busqueda_binaria
+Si el valor es menor que el del centro sigue buscando en la mitad izquierda,busqueda_binaria
+Su complejidad es O(log n),busqueda_binaria
+En cada paso reduce a la mitad el espacio de búsqueda,busqueda_binaria
+Es como adivinar un número del 1 al 100 diciendo solo mayor o menor,busqueda_binaria
+Abrir un diccionario por la mitad y decidir si la palabra queda antes o después,busqueda_binaria
+"Usa tres índices: inicio, fin y medio",busqueda_binaria
+medio = (inicio + fin) // 2,busqueda_binaria
+Encuentra un dato entre un millón de elementos ordenados en unos 20 pasos,busqueda_binaria
+Divide y vencerás aplicado a una lista ordenada,busqueda_binaria
+Divide el arreglo en tres partes usando dos puntos medios,busqueda_binaria
+Calcula el punto medio y descarta una mitad con cada comparación,busqueda_binaria
+Busca un nombre en una guía telefónica abriendo por el centro,busqueda_binaria
+"Si el elemento del centro es mayor que el buscado, mueve el límite derecho",busqueda_binaria
+"Si el elemento central es menor que el buscado, mueve el límite izquierdo",busqueda_binaria
+Solo funciona en estructuras ordenadas con acceso directo por índice,busqueda_binaria
+Con 1000 elementos ordenados necesita como máximo 10 comparaciones,busqueda_binaria
+Repite el corte por la mitad hasta quedarse con un solo elemento,busqueda_binaria
+Es lo que hace el módulo bisect de Python,busqueda_binaria
+Versión recursiva que busca en el subarreglo izquierdo o en el derecho,busqueda_binaria
+Encontrar una página de un libro abriéndolo en medio y avanzando o retrocediendo,busqueda_binaria
+Descarta la mitad de los datos con cada comparación,busqueda_binaria
+"Es mucho más rápida que la lineal, pero antes hay que ordenar los datos",busqueda_binaria
+Juego de adivinar el número: ¿es mayor que 50? entonces ¿es mayor que 75?,busqueda_binaria
+while inicio <= fin: medio = (inicio + fin) // 2; if a[medio] == x: return medio,busqueda_binaria
+"Partir la lista en dos, quedarse con una parte y repetir el proceso",busqueda_binaria
+Hash search,busqueda_hash
+Búsqueda por hash,busqueda_hash
+Búsqueda con tabla hash,busqueda_hash
+Búsqueda por dispersión,busqueda_hash
+Tabla de dispersión,busqueda_hash
+Hash table lookup,busqueda_hash
+Búsqueda por llave en un diccionario,busqueda_hash
+Calcula una función hash de la clave para saber directamente en qué casilla está el dato,busqueda_hash
+Accede al elemento en tiempo constante O(1) en promedio,busqueda_hash
+Usa una tabla hash para guardar y encontrar valores por su clave,busqueda_hash
+Convierte la clave en un índice con una función de dispersión,busqueda_hash
+Cuando dos claves caen en la misma posición ocurre una colisión,busqueda_hash
+Resuelve las colisiones con encadenamiento o con direccionamiento abierto,busqueda_hash
+Es como un casillero de gimnasio cuyo número se calcula a partir de tu nombre,busqueda_hash
+No necesita comparar contra todos los elementos,busqueda_hash
+indice = hash(clave) % tamaño_tabla,busqueda_hash
+Los diccionarios de Python funcionan con este principio,busqueda_hash
+Un mapa clave-valor como el HashMap de Java,busqueda_hash
+Sirve para encontrar al instante a un alumno por su matrícula,busqueda_hash
+Si la función hash es mala se amontonan datos en pocas casillas y se vuelve lenta,busqueda_hash
+Se vigila el factor de carga de la tabla para no llenarla,busqueda_hash
+Cuando la casilla está ocupada usa sondeo lineal para probar la siguiente,busqueda_hash
+Un bibliotecario calcula con una fórmula el estante exacto de cada libro a partir de su código,busqueda_hash
+No importa el orden en que se guardan los datos porque la posición la decide la fórmula,busqueda_hash
+Un conjunto (set) comprueba si un elemento existe casi al instante,busqueda_hash
+Asigna cada clave a un cubo mediante una función matemática,busqueda_hash
+Si la tabla se llena hay que hacer rehashing con un tamaño mayor,busqueda_hash
+"Tiempo constante en promedio, pero O(n) en el peor caso si todo choca",busqueda_hash
+La clave se transforma en un número que indica la posición donde se guardó,busqueda_hash
+Cada cubo guarda una lista con las claves que chocaron,busqueda_hash
+tabla[hash(nombre) % 10],busqueda_hash
+Busca por la clave transformada en lugar de comparar valores uno a uno,busqueda_hash
+Se aplica una función al dato y el resultado es la dirección donde buscarlo,busqueda_hash
+Para saber si un correo ya está registrado se calcula su hash y se mira esa posición,busqueda_hash
+Jump search,busqueda_saltos_interpolacion
+Búsqueda por saltos,busqueda_saltos_interpolacion
+Búsqueda por interpolación,busqueda_saltos_interpolacion
+Interpolation search,busqueda_saltos_interpolacion
+Búsqueda exponencial,busqueda_saltos_interpolacion
+Búsqueda de Fibonacci,busqueda_saltos_interpolacion
+Búsqueda por bloques,busqueda_saltos_interpolacion
+Galloping search,busqueda_saltos_interpolacion
+Salta de bloque en bloque de tamaño raíz de n y luego busca linealmente dentro del bloque,busqueda_saltos_interpolacion
+El tamaño óptimo del salto es la raíz cuadrada de n,busqueda_saltos_interpolacion
+Estima en qué posición debe estar el dato según su valor en lugar de ir siempre al centro,busqueda_saltos_interpolacion
+Se usa en listas ordenadas con valores distribuidos de manera uniforme,busqueda_saltos_interpolacion
+Calcula la posición probable con una fórmula proporcional al valor buscado,busqueda_saltos_interpolacion
+pos = inicio + (x - a[inicio]) * (fin - inicio) / (a[fin] - a[inicio]),busqueda_saltos_interpolacion
+"Duplica el índice 1, 2, 4, 8 hasta pasarse del valor y luego busca dentro de ese rango",busqueda_saltos_interpolacion
+Su complejidad es O(√n) cuando avanza por saltos,busqueda_saltos_interpolacion
+En promedio es O(log log n) cuando los datos están distribuidos uniformemente,busqueda_saltos_interpolacion
+Si busca Zacarías en una agenda ordenada abre cerca del final y no a la mitad,busqueda_saltos_interpolacion
+Avanza con saltos fijos hasta que el elemento actual es mayor que el buscado y entonces retrocede un bloque,busqueda_saltos_interpolacion
+Usa los números de Fibonacci para decidir los puntos de comparación,busqueda_saltos_interpolacion
+Combina saltos grandes con una búsqueda lineal corta,busqueda_saltos_interpolacion
+Salta de 5 en 5 posiciones en la lista ordenada,busqueda_saltos_interpolacion
+Para un número pequeño mira cerca del inicio y para uno grande mira cerca del final,busqueda_saltos_interpolacion
+Busca un rango que crece exponencialmente y después aplica búsqueda binaria dentro de él,busqueda_saltos_interpolacion
+Es útil cuando no se conoce el tamaño de la lista o esta es muy grande,busqueda_saltos_interpolacion
+Es como subir una escalera de varios escalones a la vez y bajar si te pasas,busqueda_saltos_interpolacion
+Predice dónde debe estar el elemento aplicando una regla de tres,busqueda_saltos_interpolacion
+"Mejora a la binaria cuando los datos crecen de forma casi lineal, como folios consecutivos",busqueda_saltos_interpolacion
+Avanza por bloques hasta rebasar el valor y luego recorre el bloque anterior,busqueda_saltos_interpolacion
+A diferencia de la binaria no parte por la mitad: salta o estima la posición,busqueda_saltos_interpolacion
+Evita recorrer toda la lista saltando varios elementos a la vez,busqueda_saltos_interpolacion
+paso = int(math.sqrt(n)),busqueda_saltos_interpolacion
+"Funciona mal con datos muy desiguales como 1, 2, 3, 1000000",busqueda_saltos_interpolacion
+Sondea una posición calculada con la proporción entre el valor buscado y los extremos,busqueda_saltos_interpolacion
+Linear search,busqueda_secuencial
+Búsqueda lineal,busqueda_secuencial
+Búsqueda secuencial,busqueda_secuencial
+Sequential search,busqueda_secuencial
+Búsqueda con centinela,busqueda_secuencial
+Búsqueda uno por uno,busqueda_secuencial
+Búsqueda exhaustiva en un arreglo,busqueda_secuencial
+Revisa los elementos uno por uno desde el primero hasta encontrar el buscado,busqueda_secuencial
+Recorre la lista de principio a fin comparando cada elemento con el valor buscado,busqueda_secuencial
+No necesita que los datos estén ordenados,busqueda_secuencial
+Funciona en listas desordenadas porque revisa cada posición,busqueda_secuencial
+En el peor caso tiene que revisar todos los elementos de la lista,busqueda_secuencial
+Su complejidad es O(n),busqueda_secuencial
+Es como buscar una carta en un mazo revuelto volteándolas una por una,busqueda_secuencial
+Buscar un nombre en una lista de asistencia leyendo renglón por renglón,busqueda_secuencial
+Un ciclo for compara arreglo[i] con el valor y se detiene si coincide,busqueda_secuencial
+"Si el elemento está al principio lo encuentra rápido, pero si está al final revisa todo",busqueda_secuencial
+Pone el valor buscado al final del arreglo como centinela para evitar comparar el límite,busqueda_secuencial
+Es el algoritmo de búsqueda más simple y fácil de programar,busqueda_secuencial
+Compara uno a uno hasta que aparece el dato o se acaba la lista,busqueda_secuencial
+Sirve bien para listas pequeñas o sin orden,busqueda_secuencial
+Busca una llave abriendo todos los cajones uno por uno,busqueda_secuencial
+Devuelve la posición del primer elemento igual al buscado,busqueda_secuencial
+Recorre una lista enlazada nodo por nodo para encontrar un valor,busqueda_secuencial
+Revisa cada casilla del arreglo en orden hasta dar con el número,busqueda_secuencial
+No hace ninguna suposición sobre cómo están acomodados los datos,busqueda_secuencial
+Es lo que hace la función index de las listas de Python,busqueda_secuencial
+Para encontrar un teléfono en una libreta sin orden se leen todos los números hasta dar con él,busqueda_secuencial
+Si el elemento no existe termina hasta después de comparar con todos,busqueda_secuencial
+Va de izquierda a derecha buscando una coincidencia,busqueda_secuencial
+while i < n and arreglo[i] != clave: i += 1,busqueda_secuencial
+Es lenta cuando hay millones de datos porque mira cada uno,busqueda_secuencial
+Compara el dato con cada elemento sin saltarse ninguno,busqueda_secuencial
+El cajero revisa los boletos uno por uno hasta encontrar el del número ganador,busqueda_secuencial
+"Busca en una fila de casilleros abriendo el primero, luego el segundo y así sucesivamente",busqueda_secuencial
+Ordenamiento burbuja,otro_tema
+Quicksort,otro_tema
+Merge sort,otro_tema
+Ordenamiento por inserción,otro_tema
+Intercambia elementos vecinos si están en el orden equivocado,otro_tema
+Elige un pivote y separa los menores de los mayores,otro_tema
+Mezcla dos listas ya ordenadas en una sola,otro_tema
+"Algoritmo genético con población, cruce y mutación",otro_tema
+Minimax para jugar al gato contra la computadora,otro_tema
+A* usa una heurística para encontrar la ruta más corta en un mapa,otro_tema
+Recorrido en anchura de un grafo con una cola,otro_tema
+Algoritmo de Dijkstra para caminos mínimos,otro_tema
+Una red neuronal ajusta sus pesos con retropropagación,otro_tema
+K-means agrupa puntos en clústeres,otro_tema
+Regresión lineal para predecir el precio de una casa,otro_tema
+Fibonacci calculado con recursión y memoización,otro_tema
+Cifrado César que desplaza las letras del alfabeto,otro_tema
+Compresión de datos con el algoritmo de Huffman,otro_tema
+Me gusta cocinar pasta con salsa de tomate,otro_tema
+El equipo de fútbol ganó el partido por dos goles,otro_tema
+Mañana va a llover por la tarde en Puebla,otro_tema
+"Necesito comprar leche, huevos y pan en el súper",otro_tema
+La película que vimos anoche estuvo muy divertida,otro_tema
+Cómo instalar Python en Windows,otro_tema
+Mi gato duerme todo el día en el sillón,otro_tema
+El profesor dejó tarea de bases de datos para el lunes,otro_tema
+Una base de datos relacional guarda la información en tablas,otro_tema
+Consulta SQL con SELECT y WHERE para filtrar registros,otro_tema
+La capital de Francia es París,otro_tema
+Para hacer ejercicio conviene calentar antes de empezar,otro_tema
+Qué hora sale el camión a la universidad,otro_tema
+"Hola, buenos días",otro_tema
+Dibujar un círculo con Scratch usando bucles,otro_tema
+Una variable guarda un valor en la memoria de la computadora,otro_tema
+Cómo hacer un respaldo de una base de datos en la nube,otro_tema
